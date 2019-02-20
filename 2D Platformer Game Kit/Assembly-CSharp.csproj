@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectGuid>{02C19CDA-4FD9-BE06-830D-F5B47880D8AA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_2_20;UNITY_2018_2;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_POST_PROCESSING_STACK_V2</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityVersion>2018.2.20f1</UnityVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.2.20f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.2.20f1\Editor\Data\Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\AI\BoyController.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\AI\BT.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\AI\GunnerBeam.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\AI\GunnerBeamController.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\AI\GunnerProjectile.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\AI\InstantiateObject.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\AI\MissileGolem.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\AI\SendSignal.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Audio\AudioSurface.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Audio\BackgroundMusicPlayer.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Audio\MixerSliderLink.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Audio\RandomAudioPlayer.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Character\MonoBehaviours\Bullet.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Character\MonoBehaviours\BulletPool.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Character\MonoBehaviours\CharacterController2D.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Character\MonoBehaviours\Damageable.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Character\MonoBehaviours\Damager.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Character\MonoBehaviours\EnemyBehaviour.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Character\MonoBehaviours\EnemyPatrol.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Character\MonoBehaviours\InputComponent.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Character\MonoBehaviours\PlayerCharacter.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Character\MonoBehaviours\PlayerInput.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Character\MonoBehaviours\Shield.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Character\MonoBehaviours\ThrownShield.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Character\MonoBehaviours\VFXController.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Character\StateMachineBehaviours\Enemy\GhostAirborneSMB.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Character\StateMachineBehaviours\Enemy\GhostDeathSMB.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Character\StateMachineBehaviours\Enemy\GhostPatrolSMB.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Character\StateMachineBehaviours\Player\AirborneRangedSMB.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Character\StateMachineBehaviours\Player\AirborneSMB.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Character\StateMachineBehaviours\Player\AirMeleeAttackSMB.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Character\StateMachineBehaviours\Player\DeathLandingSMB.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Character\StateMachineBehaviours\Player\DeathSMB.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Character\StateMachineBehaviours\Player\MeleeAttackSMB.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Character\StateMachineBehaviours\Player\MovementRangedSMB.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Character\StateMachineBehaviours\Player\MovementSMB.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Character\StateMachineBehaviours\Player\PushingSMB.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Character\StateMachineBehaviours\Player\RespawnSMB.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Character\StateMachineBehaviours\Player\SceneLinkedSMB.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Character\StateMachineBehaviours\Player\TakeDamageSMB.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Character\StateMachineBehaviours\Player\TriggerVFX.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Character\StateMachineBehaviours\Player\WallSlideSMB.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Core\AbilityPickup.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Core\CameraShaker.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Core\Checkpoint.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Core\InteractOnButton2D.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Core\InteractOnCollision2D.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Core\InteractOnTrigger2D.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Core\InventoryController.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Core\InventoryItem.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Core\LayerMaskExtensions.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Core\ObjectPool.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Core\TimedDisabling.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Effect\DropShadow.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Effect\Grenade.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Effect\GunnerLightning.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Effect\GunnerShieldEffect.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Effect\SpriteColorChange.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Objects\DialogueTrigger.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Objects\DoorControl.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Objects\EnemySpawner.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Objects\FakeTerrain.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Objects\FallRespawn.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Objects\HubDoor.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Objects\Items\ChestParameterSetter.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Objects\Items\HealthPickup.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Objects\Items\ItemDispenser.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Objects\Items\KeyToItem.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Objects\Items\Launcher.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Objects\Items\Shatter.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Objects\Items\ShatterPieces.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Objects\Items\WeaponPickup.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Objects\Obstacles\Boulder.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Objects\Obstacles\BoulderTrap.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Objects\Obstacles\Switch.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Objects\Obstacles\TileControl.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Objects\Platforms\FallThroughResetter.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Objects\Platforms\JointControl.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Objects\Platforms\MovingPlatform.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Objects\Platforms\PlatformCatcher.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Objects\Pushables\PressurePad.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Objects\Pushables\Pushable.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\SceneManagement\CharacterStateSetter.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\SceneManagement\EventManager.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\SceneManagement\GameObjectTeleporter.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\SceneManagement\IDataPersister.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\SceneManagement\PersistentDataManager.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\SceneManagement\SavedData.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\SceneManagement\SceneController.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\SceneManagement\SceneControllerWrapper.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\SceneManagement\SceneNameAttribute.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\SceneManagement\SceneTransitionDestination.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\SceneManagement\ScreenFader.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\SceneManagement\TransitionPoint.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Timeline\DirectorTrigger.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Timeline\ScrollingText\ScrollingTextBehaviour.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Timeline\ScrollingText\ScrollingTextClip.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Timeline\ScrollingText\ScrollingTextMixerBehaviour.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Timeline\ScrollingText\ScrollingTextTrack.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\UI\HealthUI.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\UI\InputDisplayUI.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\UI\ItemUI.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\UI\MenuActivityController.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\UI\OptionUI.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\UI\StartUI.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Utilities\AutoCameraSetup.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Utilities\DialogueCanvasController.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Utilities\EditModeGizmos.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Utilities\Helpers.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Utilities\OffsetBrush.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Utilities\PhysicsHelper.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Utilities\PrefabBrush.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Utilities\PriorityQueue.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Utilities\RoutineHelper.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Utilities\RuleTile.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Utilities\ScreenShot.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Utilities\SetMaterialRenderQueue.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Scripts\Utilities\VisibleBubbleUp.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Utilities\CinemachinePostProcessingV2\CinemachinePostProcessing.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Utilities\DefaultPlayables\LightControl\LightControlBehaviour.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Utilities\DefaultPlayables\LightControl\LightControlClip.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Utilities\DefaultPlayables\LightControl\LightControlMixerBehaviour.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Utilities\DefaultPlayables\LightControl\LightControlTrack.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Utilities\DefaultPlayables\NavMeshAgentControl\NavMeshAgentControlBehaviour.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Utilities\DefaultPlayables\NavMeshAgentControl\NavMeshAgentControlClip.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Utilities\DefaultPlayables\NavMeshAgentControl\NavMeshAgentControlMixerBehaviour.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Utilities\DefaultPlayables\NavMeshAgentControl\NavMeshAgentControlTrack.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Utilities\DefaultPlayables\ScreenFader\ScreenFaderBehaviour.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Utilities\DefaultPlayables\ScreenFader\ScreenFaderClip.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Utilities\DefaultPlayables\ScreenFader\ScreenFaderMixerBehaviour.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Utilities\DefaultPlayables\ScreenFader\ScreenFaderTrack.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Utilities\DefaultPlayables\TextSwitcher\TextSwitcherBehaviour.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Utilities\DefaultPlayables\TextSwitcher\TextSwitcherClip.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Utilities\DefaultPlayables\TextSwitcher\TextSwitcherMixerBehaviour.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Utilities\DefaultPlayables\TextSwitcher\TextSwitcherTrack.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Utilities\DefaultPlayables\TimeDilation\TimeDilationBehaviour.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Utilities\DefaultPlayables\TimeDilation\TimeDilationClip.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Utilities\DefaultPlayables\TimeDilation\TimeDilationMixerBehaviour.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Utilities\DefaultPlayables\TimeDilation\TimeDilationTrack.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Utilities\DefaultPlayables\TransformTween\TransformTweenBehaviour.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Utilities\DefaultPlayables\TransformTween\TransformTweenClip.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Utilities\DefaultPlayables\TransformTween\TransformTweenMixerBehaviour.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Utilities\DefaultPlayables\TransformTween\TransformTweenTrack.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Utilities\DefaultPlayables\Video\VideoPlayableBehaviour.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Utilities\DefaultPlayables\Video\VideoSchedulerPlayableBehaviour.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Utilities\DefaultPlayables\Video\VideoScriptPlayableAsset.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Utilities\DefaultPlayables\Video\VideoScriptPlayableTrack.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Utilities\Standard Assets\Effects\ImageEffects\Scripts\BlurOptimized.cs" />
+    <Compile Include="Assets\2DPlatformerBaseGame\Utilities\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsBase.cs" />
+    <None Include="Assets\2DPlatformerBaseGame\Utilities\Shaders\NormalMappedSprite-Animated.shader" />
+    <None Include="Assets\2DPlatformerBaseGame\Utilities\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\2DPlatformerBaseGame\Utilities\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\2DPlatformerBaseGame\Utilities\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\2DPlatformerBaseGame\Utilities\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\2DPlatformerBaseGame\Utilities\Shaders\NormalMappedSprite.shader" />
+    <None Include="Assets\2DPlatformerBaseGame\Utilities\Shaders\Particle Standard Unlit.shader" />
+    <None Include="Assets\2DPlatformerBaseGame\Utilities\Shaders\Shield.shader" />
+    <None Include="Assets\2DPlatformerBaseGame\Utilities\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\2DPlatformerBaseGame\Utilities\Shaders\Water.shader" />
+    <None Include="Assets\2DPlatformerBaseGame\Utilities\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\2DPlatformerBaseGame\Utilities\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\2DPlatformerBaseGame\Utilities\Shaders\UnityStandardParticleShadow.cginc" />
+    <None Include="Assets\2DPlatformerBaseGame\Utilities\Shaders\UnityStandardParticles.cginc" />
+    <None Include="Assets\2DPlatformerBaseGame\Utilities\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\2DPlatformerBaseGame\Utilities\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\2DPlatformerBaseGame\Utilities\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\2DPlatformerBaseGame\Utilities\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\2DPlatformerBaseGame\Utilities\Fonts\Rajdhani\OFL.txt" />
+    <None Include="Assets\2DPlatformerBaseGame\Utilities\Shaders\NormalMappedTile.shader" />
+    <None Include="Assets\2DPlatformerBaseGame\Utilities\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\2DPlatformerBaseGame\Utilities\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+    <None Include="Assets\2DPlatformerBaseGame\Utilities\Shaders\FrostedGlass.shader" />
+    <None Include="Assets\2DPlatformerBaseGame\Utilities\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\2DPlatformerBaseGame\Utilities\Shaders\NormalMappedTileAnimated.shader" />
+    <None Include="Assets\2DPlatformerBaseGame\Utilities\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\2DPlatformerBaseGame\Utilities\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\2DPlatformerBaseGame\Utilities\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+    <Reference Include="Cinemachine">
+      <HintPath>C:/Users/Connor Anderson/Projects/Unity/Projects/GitHubRepos/2D Platformer Game Kit/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.PixelPerfect.Editor">
+      <HintPath>C:/Users/Connor Anderson/Projects/Unity/Projects/GitHubRepos/2D Platformer Game Kit/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProGrids">
+      <HintPath>C:/Users/Connor Anderson/Projects/Unity/Projects/GitHubRepos/2D Platformer Game Kit/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.SpriteShape.Editor">
+      <HintPath>C:/Users/Connor Anderson/Projects/Unity/Projects/GitHubRepos/2D Platformer Game Kit/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProGrids.Editor">
+      <HintPath>C:/Users/Connor Anderson/Projects/Unity/Projects/GitHubRepos/2D Platformer Game Kit/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.StandardEvents">
+      <HintPath>C:/Users/Connor Anderson/Projects/Unity/Projects/GitHubRepos/2D Platformer Game Kit/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>C:/Users/Connor Anderson/Projects/Unity/Projects/GitHubRepos/2D Platformer Game Kit/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>C:/Users/Connor Anderson/Projects/Unity/Projects/GitHubRepos/2D Platformer Game Kit/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>C:/Users/Connor Anderson/Projects/Unity/Projects/GitHubRepos/2D Platformer Game Kit/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEngineBridge.001">
+      <HintPath>C:/Users/Connor Anderson/Projects/Unity/Projects/GitHubRepos/2D Platformer Game Kit/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Common.Runtime">
+      <HintPath>C:/Users/Connor Anderson/Projects/Unity/Projects/GitHubRepos/2D Platformer Game Kit/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>C:/Users/Connor Anderson/Projects/Unity/Projects/GitHubRepos/2D Platformer Game Kit/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.SpriteShape.Runtime">
+      <HintPath>C:/Users/Connor Anderson/Projects/Unity/Projects/GitHubRepos/2D Platformer Game Kit/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.PixelPerfect">
+      <HintPath>C:/Users/Connor Anderson/Projects/Unity/Projects/GitHubRepos/2D Platformer Game Kit/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>C:/Users/Connor Anderson/Projects/Unity/Projects/GitHubRepos/2D Platformer Game Kit/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/Connor Anderson/Projects/Unity/Projects/GitHubRepos/2D Platformer Game Kit/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Common.Editor">
+      <HintPath>C:/Users/Connor Anderson/Projects/Unity/Projects/GitHubRepos/2D Platformer Game Kit/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEditorBridge.001">
+      <HintPath>C:/Users/Connor Anderson/Projects/Unity/Projects/GitHubRepos/2D Platformer Game Kit/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.BaselibModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CloudWebServicesModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.CloudWebServicesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.FacebookModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.FacebookModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.FileSystemHttpModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticlesLegacyModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StyleSheetsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TimelineModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Locator">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/Unity.Locator.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GoogleAudioSpatializer">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>C:/Users/Connor Anderson/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StandardEvents">
+      <HintPath>C:/Users/Connor Anderson/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityScript">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityScript.Lang">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.Lang.dll</HintPath>
+    </Reference>
+    <Reference Include="Boo.Lang">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

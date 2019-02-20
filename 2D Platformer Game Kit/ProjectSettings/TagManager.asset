@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - ThrownShield
+  - Heart
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Camera
+  - Player - Foreground
+  - Shield - Foreground
+  - Enemy - Foreground
+  - Level - Foreground
+  - Platform - Foreground
+  - Wall - Foreground
+  - Item - Foreground
+  - ItemPhysicsCollider - Foreground
+  - Hittable - Foreground
+  - ShatterFragment - Foreground
+  - Bullet - Foreground
+  - Player - Background
+  - Shield - Background
+  - Enemy - Background
+  - Level - Background
+  - Platform - Background
+  - Wall - Background
+  - Item - Background
+  - ItemPhysicsCollider - Background
+  - Hittable - Background
+  - Bullet - Background
+  - Boy - Foreground
+  - Boy - Background
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background - Background
+    uniqueID: 3057731785
+    locked: 0
+  - name: Level - Background
+    uniqueID: 816218901
+    locked: 0
+  - name: Characters - Background
+    uniqueID: 1175573969
+    locked: 0
+  - name: Items - Background
+    uniqueID: 554198773
+    locked: 0
+  - name: Background - Foreground
+    uniqueID: 732968747
+    locked: 0
+  - name: Level - Foreground
+    uniqueID: 4111982177
+    locked: 0
+  - name: Characters - Foreground
+    uniqueID: 2801325049
+    locked: 0
+  - name: Items - Foreground
+    uniqueID: 3754930451
+    locked: 0
+  - name: Foreground
+    uniqueID: 36427617
+    locked: 0

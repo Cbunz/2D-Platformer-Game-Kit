@@ -1,0 +1,299 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1475943310940726}
+  m_IsPrefabAsset: 1
+--- !u!1 &1475943310940726
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4086628306974338}
+  - component: {fileID: 212591916190720194}
+  - component: {fileID: 114175544886525388}
+  - component: {fileID: 114254221761713554}
+  - component: {fileID: 114470423328519078}
+  - component: {fileID: 114095796652531282}
+  - component: {fileID: 114690471722190382}
+  - component: {fileID: 61267811344174468}
+  - component: {fileID: 50292535194017486}
+  - component: {fileID: 114890588371769634}
+  m_Layer: 17
+  m_Name: Barrel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4086628306974338
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1475943310940726}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 23, y: 26, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50292535194017486
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1475943310940726}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 2.5
+  m_Material: {fileID: 6200000, guid: 971946c9e3ae1c94280457f6de08614d, type: 2}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
+--- !u!61 &61267811344174468
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1475943310940726}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.5}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.9375, y: 1}
+    newSize: {x: 0.9375, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9375, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &114095796652531282
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1475943310940726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2af4a3c86d70be54a8fce0a4283aec09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shatterDetails:
+    horizontalCuts: 3
+    verticalCuts: 4
+    randomizeAtRunTime: 1
+    randomSeed: 0
+    randomness: 0.5
+    zigzagFrequency: 0
+    zigzagAmplitude: 0
+    timeToDisappear: 0
+    colliderType: 2
+    explodeFrom: {x: 0.5, y: 0}
+    explosionForce: {x: 5, y: 5}
+--- !u!114 &114175544886525388
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1475943310940726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0fcac69244106409c1af6c7f43d756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingInventory:
+  - item: coin
+    amount: 3
+  - item: key
+    amount: 1
+  inventoryEvents: []
+  dataSettings:
+    dataTag: barrel_inventory
+    persistenceType: 3
+--- !u!114 &114254221761713554
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1475943310940726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01a3c141ab226954597c87cf5499d7f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shatterOn: 1
+  shatterTime: 3
+  instantDispense: 1
+  dispenseDeltaTime: 1
+  dispenseSpeed: 6
+  speedVariance: 2
+  minDispenseAngle: 60
+  maxDispenseAngle: 120
+  destroyAfterDispense: 1
+  dispenseOffset: {x: 0, y: 0}
+--- !u!114 &114470423328519078
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1475943310940726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22b2b47b9684fdb44bff73549ad72510, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canLaunch: 1
+  launchAngle: 50
+  launchAngleVariance: 10
+  launchSpeed: 10
+  launchSpeedVariance: 2
+  hittable:
+    serializedVersion: 2
+    m_Bits: 687616
+--- !u!114 &114690471722190382
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1475943310940726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecafd69d316c5294bb13aa7fc46da38f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 1
+  invulnerableAfterDamage: 0
+  invulnerabilityDuration: 3
+  disableOnDeath: 0
+  centerOffset: {x: 0, y: 1}
+  OnHealthSet:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Damageable+HealthEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  OnGainHealth:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Damageable+HealEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  OnTakeDamage:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Damageable+DamageEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  OnDie:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114470423328519078}
+        m_MethodName: ActivateLaunch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Damageable+DamageEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  dataSettings:
+    dataTag: barrel
+    persistenceType: 3
+--- !u!114 &114890588371769634
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1475943310940726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ecd412d8106b6c4383390b4f6f5f727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heartPrefab: {fileID: 1082967474830284, guid: e3708757365e8084db4008bd74816da6,
+    type: 2}
+  coinPrefab: {fileID: 1119131844211370, guid: d7c7094ea5ada70478025c8cc538edc6, type: 2}
+  keyPrefab: {fileID: 1618377807562228, guid: bb72ef311b9fa68459e38c0d52262839, type: 2}
+  redGemPrefab: {fileID: 1618377807562228, guid: ce9249f872027af4b8f1f68f2126c8d8,
+    type: 2}
+  greenGemPrefab: {fileID: 1723267961019628, guid: fdd102b6c66afb045b373561f61274a6,
+    type: 2}
+  blueGemPrefab: {fileID: 1124439662506530, guid: 827fcd92885164341ad088fe71fe76f2,
+    type: 2}
+  yellowGemPrefab: {fileID: 1935961355369528, guid: 522f01614cebd044cbe5323c95d27451,
+    type: 2}
+  gunPickupPrefab: {fileID: 1271924225314956, guid: 692a3d0abe2d6af4faf2c3848719177d,
+    type: 2}
+--- !u!212 &212591916190720194
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1475943310940726}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -540036845
+  m_SortingLayer: 8
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 23ec6697cc314d741b69dc1332993a6a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.9375, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
